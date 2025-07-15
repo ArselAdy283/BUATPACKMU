@@ -2,7 +2,7 @@
 Aplikasi ini untuk kebutuhan membuat resource pack Minecraft Bedrock Edition
 
 ## FITUR✨
--Generate UUID
+-Generate UUID\n
 -Template Resource Pack
 
 ## SYARAT
