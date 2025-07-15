@@ -25,7 +25,6 @@ def generateuuid():
 def buat_pack_icon(path):
     from PIL import Image, ImageDraw, ImageFont
 
-    # Buat gambar 256x256 dengan warna biru
     img = Image.new("RGBA", (256, 256), (0, 102, 204, 255))
     draw = ImageDraw.Draw(img)
     text = "RESOURCE PACK\n BUATPACKMU"
@@ -47,16 +46,13 @@ def buat_resource_pack():
     clear()
     print("==== Buat Resource Pack ====\n")
 
-    # Input dari pengguna
     name = input("Nama resource pack (nama folder): ").strip()
     author = input("Nama author: ").strip()
     description = input("Deskripsi: ").strip()
 
-    # UUID otomatis
     header_uuid = str(uuid.uuid4())
     module_uuid = str(uuid.uuid4())
 
-    # Data JSON untuk manifest
     manifest = {
         "format_version": 2,
         "header": {
@@ -78,12 +74,10 @@ def buat_resource_pack():
         }
     }
 
-    # Folder utama dan folder pack
     folder_utama = "ResourcePacks"
     folder_pack = os.path.join(folder_utama, name)
     os.makedirs(folder_pack, exist_ok=True)
 
-    # Buat subfolder textures dan texts
     textures_folder = os.path.join(folder_pack, "textures")
     texts_folder = os.path.join(folder_pack, "texts")
     blocks_folder = os.path.join(textures_folder, "blocks")
@@ -93,12 +87,10 @@ def buat_resource_pack():
     os.makedirs(blocks_folder, exist_ok=True)
     os.makedirs(items_folder, exist_ok=True)
 
-    # Tulis manifest.json
     manifest_path = os.path.join(folder_pack, "manifest.json")
     with open(manifest_path, "w") as f:
         json.dump(manifest, f, indent=4)
 
-    # Tambahkan file terrain_texture.json kosong
     terrain_texture_path = os.path.join(textures_folder, "terrain_texture.json") 
     with open(terrain_texture_path, "w") as f:
         f.write(f'''{{
@@ -116,12 +108,10 @@ def buat_resource_pack():
     with open(information_items_path, "w") as f:
         f.write('tambahkan texture item di folder items ini seperti "diamond.png", "stone_sword.png", dll \ndengan ukuran defualt 16x16')
 
-    # Tambahkan file en_US.lang kosong
     lang_file_path = os.path.join(texts_folder, "en_US.lang")
     with open(lang_file_path, "w") as f:
         f.write("# Language file\n")
 
-    # Buat icon pack otomatis
     pack_icon_path = os.path.join(folder_pack, "pack_icon.png")
     buat_pack_icon(pack_icon_path)
 
