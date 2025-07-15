@@ -1,4 +1,4 @@
-# BUATPACKMU
+<h1 align="center">BUATPACKMU<\h1>
 Aplikasi ini untuk kebutuhan membuat resource pack Minecraft Bedrock Edition
 
 ## FITUR✨
