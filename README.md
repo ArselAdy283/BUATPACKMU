@@ -1,5 +1,6 @@
 <h1 align="center">BUATPACKMU</h1>
-Aplikasi ini untuk kebutuhan membuat resource pack Minecraft Bedrock Edition
+Aplikasi ini untuk kebutuhan membuat resource pack Minecraft Bedrock Edition  
+lebih cepat dan lebih mudah
 
 ## FITUR✨
 -Generate UUID  
