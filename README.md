@@ -7,6 +7,6 @@ Aplikasi ini untuk kebutuhan membuat resource pack Minecraft Bedrock Edition
 -Template Resource Pack
 
 ## SYARAT INSTALASI
-kalian harus download Python 3.10+  
-kalian harus install library Pillow
+-kalian harus download Python 3.10+  
+-kalian harus install library Pillow
 <pre><code>pip install pillow</code></pre>
