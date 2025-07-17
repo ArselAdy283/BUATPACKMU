@@ -3,6 +3,7 @@
 import os
 import json
 import uuid
+import shutil
 from PIL import Image, ImageDraw, ImageFont
 
 def clear():
@@ -116,6 +117,12 @@ def buat_resource_pack():
     buat_pack_icon(pack_icon_path)
 
     print(f"\n✅ Resource pack '{name}' berhasil dibuat di folder: '{folder_pack}'")
+    
+    #Buat file .mcpack
+    mcpack_path = folder_pack + ".mcpack"
+    shutil.make_archive(folder_pack, 'zip', folder_pack)
+    os.rename(folder_pack + ".zip", mcpack_path)
+    
     input("Tekan Enter untuk kembali ke menu...")
 
 def main():
