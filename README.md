@@ -6,7 +6,7 @@ Aplikasi ini untuk kebutuhan membuat resource pack Minecraft Bedrock Edition
 -Generate UUID  
 -Template Resource Pack
 
-## SYARAT INSTALASI
+## SYARAT INSTALASI (sementara ga harus)
 -kalian harus download Python 3.10+  
 -kalian harus install library Pillow
 <pre><code>pip install pillow</code></pre>
