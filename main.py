@@ -92,11 +92,11 @@ def buat_resource_pack():
     with open(manifest_path, "w") as f:
         json.dump(manifest, f, indent=4)
 
-    source_biome = 'biomes_client.json'
+    source_biome = 'file/biomes_client.json'
     if os.path.exists(source_biome):
         shutil.copy2(source_biome, os.path.join(folder_pack, 'biomes_client.json'))
 
-    source_icon = 'pack_icon.png'
+    source_icon = 'file/pack_icon.png'
     if os.path.exists(source_icon):
         shutil.copy2(source_icon, os.path.join(folder_pack, 'pack_icon.png'))
 
