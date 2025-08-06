@@ -22,27 +22,7 @@ def generateuuid():
         buat_lagi = input("\nApakah kamu mau buat lagi? [y/n]: ")
         if buat_lagi != "y":
             break
-
-# def buat_pack_icon(path):
-#     from PIL import Image, ImageDraw, ImageFont
-
-#     img = Image.new("RGBA", (256, 256), (0, 102, 204, 255))
-#     draw = ImageDraw.Draw(img)
-#     text = "RESOURCE PACK\n BUATPACKMU"
-
-#     try:
-#         font = ImageFont.truetype("arial.ttf", 24)
-#     except:
-#         font = ImageFont.load_default()
-
-#     bbox = draw.textbbox((0, 0), text, font=font)
-#     text_width = bbox[2] - bbox[0]
-#     text_height = bbox[3] - bbox[1]
-#     posisi = ((256 - text_width) // 2, (256 - text_height) // 2)
-
-#     draw.text(posisi, text, fill=(255, 255, 255), font=font)
-#     img.save(path)
-
+            
 def buat_resource_pack():
     clear()
     print("==== Buat Resource Pack ====\n")
@@ -225,3 +205,4 @@ def main():
                 input("Pilihan tidak valid! Tekan Enter...")
 
 main()
+
