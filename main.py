@@ -204,5 +204,6 @@ def main():
             case _:
                 input("Pilihan tidak valid! Tekan Enter...")
 
-main()
-
+if __name__ == "__main__":
+    main()
+    
