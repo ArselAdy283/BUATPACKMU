@@ -4,7 +4,6 @@ import os
 import json
 import uuid
 import shutil
-from PIL import Image, ImageDraw, ImageFont
 
 def clear():
     if os.name == "nt":
