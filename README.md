@@ -5,4 +5,5 @@ Aplikasi ini untuk kebutuhan membuat resource pack Minecraft Bedrock Edition
 ## FITUR✨
 -Generate UUID  
 -Template Resource Pack  
+-Template Skin Pack  
 -Convert folder to McPack
